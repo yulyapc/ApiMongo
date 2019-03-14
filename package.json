@@ -1,0 +1,21 @@
+{
+  "name": "apimongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "cover": "nyc -r lcov -r html mocha -R mocha-junit-reporter",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  }
+}

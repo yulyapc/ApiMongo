@@ -1,0 +1,33 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "required": [
+      "NitEmpresa",
+      "NombreEmpresa",
+      "Salario",
+      "FechaIngreso"
+    ],
+    "properties": {
+      "NitEmpresa": {
+        "$id": "#/properties/NitEmpresa",
+        "type": "integer"
+      },
+      "NombreEmpresa": {
+        "$id": "#/properties/NombreEmpresa",
+        "type": "string",
+        "pattern": "^(.*)$"
+      },
+      "Salario": {
+        "$id": "#/properties/Salario",
+        "type": "integer",
+        "maximum": 100000000
+      },
+      "FechaIngreso": {
+        "$id": "#/properties/FechaIngreso",
+        "type": "string"
+        
+      }
+    }
+  }

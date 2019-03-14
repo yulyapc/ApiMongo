@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "929ac923-c15c-4512-bd01-4ec278014e65",
+		"name": "APIClientesBanco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetbyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetbyIdentificacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/123456/buscar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"123456",
+						"buscar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"identificacion\": 123456,\n\t\"nombre\" : \"Nombre\",\n\t\"apellido\": \"Apellido\",\n\t\"fechanacimiento\": \"01/03/2000\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"identificacion\": 1035390332,\n        \"nombre\": \"pepito\",\n        \"apellido\": \"Perez\",\n        \"fechanacimiento\": \"12/03/1994\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:4000/5c89789bb3637f37a061bcf8/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"5c89789bb3637f37a061bcf8",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:4000/5c89789bb3637f37a061bcf8/eliminar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"5c89789bb3637f37a061bcf8",
+						"eliminar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"NitEmpresa\": 1020308,\r\n\t\"NombreEmpresa\": \"Mi Empresa\",\r\n\t\"Salario\": 1000000,\r\n\t\"FechaIngreso\": \"03-04-2010\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/solicitudcredito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"solicitudcredito"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
