@@ -8,3 +8,5 @@
 5. En la carpeta \ApiMongo\collection se encuentra la coleccion postman, con las apis desarrolladas.
 
 NOTA: Las fechas a ingresar deberán estar en formato MM/DD/YYYY
+
+API_KEY=ghp_xxxxxxxxxxxxxxxxx
