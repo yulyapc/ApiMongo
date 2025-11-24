@@ -9,4 +9,3 @@
 
 NOTA: Las fechas a ingresar deberán estar en formato MM/DD/YYYY
 
-API_KEY=ghp_xxxxxxxxxxxxxxxxx
